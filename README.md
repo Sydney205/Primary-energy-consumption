@@ -44,7 +44,7 @@ The dataset contains the following key columns:
 
 ### Country Energy Consumption Plot
 - Bar plot displaying total primary energy consumption by country.
-- <img src="country_energy_consumption.png" alt="Country Energy Consumption" />
+- <img src="./visuals/country_energy_consumption.png" alt="Country Energy Consumption" />
 
 ### China vs United States Energy Consumption
 - A line plot comparing energy consumption trends between China and the United States from 1965 onwards.
@@ -52,12 +52,12 @@ The dataset contains the following key columns:
 
 ### Year-on-Year Growth in China
 - A line plot showing the year-on-year growth percentage in primary energy consumption for China.
-- <img src="yoy.png" alt="Year-on-Year Growth in China" />
+- <img src="./visuals/yoy.png" alt="Year-on-Year Growth in China" />
 
 ### Linear Regression Predictions
 - Scatter plot showing the actual vs predicted values for energy consumption in the United States.
 - Predictions for future energy consumption until 2050 using a linear regression model.
-- <img src="prediction.png" alt="Linear Regression Predictions" />
+- <img src="./visuals/prediction.png" alt="Linear Regression Predictions" />
 
 ## Dependencies
 
