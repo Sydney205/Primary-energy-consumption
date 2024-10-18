@@ -1,80 +1,84 @@
-# Energy Consumption Analysis Project
+# Energy Consumption Analysis
 
-## Overview
+This project analyzes global primary energy consumption trends for various countries and regions. It includes data processing, visualization, statistical analysis, and machine learning to make predictions about future energy consumption.
 
-This project is focused on analyzing global primary energy consumption data using Python. The dataset includes countries, regions, and continents with their energy consumption across several years. The analysis primarily focuses on identifying trends in energy consumption for individual countries.
+## Table of Contents
 
-## Project Structure
+- [Project Overview](#project-overview)
+- [Data Description](#data-description)
+- [Installation](#installation)
+- [Visualizations](#visualizations)
+  - [Top 10 Energy Consuming Countries](#top-10-energy-consuming-countries)
+  - [China vs United States Energy Consumption](#china-vs-united-states-energy-consumption)
+  - [Year-on-Year Growth in China](#year-on-year-growth-in-china)
+  - [Anomaly Detection in US Energy Consumption](#anomaly-detection-in-us-energy-consumption)
+  - [Linear Regression Predictions](#linear-regression-predictions)
+- [Dependencies](#dependencies)
+- [License](#license)
 
-- **Dataset**: `primary-energy-cons.csv`  
-  This file contains data on primary energy consumption (TWh) for various entities (countries, regions, continents) across several years.
+## Project Overview
 
-- **Notebook**: `energy_consumption_analysis.ipynb`  
-  This notebook contains all the code for loading, cleaning, analyzing, and visualizing the data.
+This project focuses on exploring and analyzing global energy consumption data using Python. Key insights include:
 
-## Installation and Setup
+- Total energy consumption by countries
+- Energy consumption comparison between the top energy consumers
+- Year-on-year growth in energy consumption
+- Detection of anomalies in energy consumption
+- Predictions for future energy consumption using linear regression
 
-### Prerequisites
-Before running the project, ensure you have the following installed:
-- Python 3.x
-- Jupyter Notebook or Jupyter Lab
-- Required libraries: `pandas` & `matplotlib`
+## Data Description
 
-You can install the required libraries using the following command:
+The dataset contains the following key columns:
 
-```bash
-pip install pandas matplotlib notebook
-```
-
-### Running the Notebook
-To run the notebook, use the following command to launch Jupyter:
-
-```bash
-jupyter notebook
-```
-
-Open the `energy_consumption_analysis.ipynb` notebook from the Jupyter interface.
-
-## Dataset Description
-
-- **Entity**: Name of the country, region, or continent.
+- **Entity**: Country, region, or continent.
 - **Code**: ISO 3-letter country code.
-- **Year**: The year of data collection.
-- **Primary energy consumption (TWh)**: Energy consumption in terawatt-hours.
+- **Year**: The year of the data entry.
+- **Primary energy consumption (TWh)**: The primary energy consumption measured in terawatt-hours.
 
-## Analysis
+## Installation
 
-The analysis is carried out in a Jupyter Notebook and includes the following steps:
+1. Clone this repository:
+   ```bash
+   git clone https://https://github.com/Sydney205/Primary-energy-consumption.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd energy-consumption-analysis
+   ```
 
-### Data Loading
+## Visualizations
 
-The dataset is loaded using pandas for data analysis.
+### Country Energy Consumption Plot
+- Bar plot displaying total primary energy consumption by country.
+- <img src="country_energy_consumption.png" alt="Country Energy Consumption" />
 
-```python
-import pandas as pd
+### China vs United States Energy Consumption
+- A line plot comparing energy consumption trends between China and the United States from 1965 onwards.
+- <img src="./visuals/us_vs_china.png" alt="us vs china" />
 
-df = pd.read_csv('primary-energy-cons.csv')
-df.head()
+### Year-on-Year Growth in China
+- A line plot showing the year-on-year growth percentage in primary energy consumption for China.
+- <img src="yoy.png" alt="Year-on-Year Growth in China" />
+
+### Linear Regression Predictions
+- Scatter plot showing the actual vs predicted values for energy consumption in the United States.
+- Predictions for future energy consumption until 2050 using a linear regression model.
+- <img src="prediction.png" alt="Linear Regression Predictions" />
+
+## Dependencies
+
+- Python 3.x
+- pandas
+- matplotlib
+- scikit-learn
+
+To install the dependencies, run:
+
+```bash
+pip install pandas matplotlib scikit-learn
 ```
-
-### Visualizations
-
-The notebook includes several visualizations using `matplotlib` to analyze and display trends in global energy consumption.
-
-## Example Visualizations
-
-- **Top Energy Consumers**: Bar plots showing the top energy-consuming countries.
-- **Energy Consumption Trend**: Line plots for comparing trends across different countries.
-  
-## Conclusion
-
-This project provides a comprehensive analysis of global energy consumption using Python and Jupyter Notebook. The notebook can be extended to include more complex analyses and visualizations, including predictive models.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](./license.md) file for details.
 
-## Acknowledgements
-
-- The dataset was obtained from [blob:https://ourworldindata.org/45aa90b8-7da0-4181-8920-2bb89fec0a9e].
-- Libraries used: `pandas`, `matplotlib`, `Jupyter Notebook`.
