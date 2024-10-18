@@ -20,12 +20,6 @@ This project analyzes global primary energy consumption trends for various count
 
 This project focuses on exploring and analyzing global energy consumption data using Python. Key insights include:
 
-- Total energy consumption by countries
-- Energy consumption comparison between the top energy consumers
-- Year-on-year growth in energy consumption
-- Detection of anomalies in energy consumption
-- Predictions for future energy consumption using linear regression
-
 ## Data Description
 
 The dataset contains the following key columns:
@@ -77,8 +71,14 @@ To install the dependencies, run:
 ```bash
 pip install pandas matplotlib scikit-learn
 ```
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./license.md) file for details.
 
+## Acknowledgements
+
+- The dataset was obtained from https://ourworldindata.org.
+- Libraries used: `pandas`, `matplotlib`, `scikit-learn`.
+
+## Download dataset
+- blob:https://ourworldindata.org/45aa90b8-7da0-4181-8920-2bb89fec0a9e
