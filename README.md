@@ -1,10 +1,10 @@
-# Energy Consumption Analysis Project
+# Energy Consumption Analysis Project 📉
 
 ## Overview
 
 This project is focused on analyzing global primary energy consumption data using Python. The dataset includes countries, regions, and continents with their energy consumption across several years. The analysis primarily focuses on identifying trends in energy consumption for individual countries.
 
-## Project Structure
+## Project Structure 
 
 - **Dataset**: `primary-energy-cons.csv`  
   This file contains data on primary energy consumption (TWh) for various entities (countries, regions, continents) across several years.
@@ -12,7 +12,7 @@ This project is focused on analyzing global primary energy consumption data usin
 - **Notebook**: `energy_consumption_analysis.ipynb`  
   This notebook contains all the code for loading, cleaning, analyzing, and visualizing the data.
 
-## Installation and Setup
+## Installation and Setup 📦
 
 ### Prerequisites
 Before running the project, ensure you have the following installed:
@@ -57,7 +57,7 @@ df = pd.read_csv('primary-energy-cons.csv')
 df.head()
 ```
 
-### Visualizations
+### Visualizations 📊
 
 The notebook includes several visualizations using `matplotlib` to analyze and display trends in global energy consumption.
 
@@ -76,5 +76,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-- The dataset was obtained from [blob:https://ourworldindata.org/45aa90b8-7da0-4181-8920-2bb89fec0a9e].
+- The dataset was obtained from https://ourworldindata.org.
 - Libraries used: `pandas`, `matplotlib`, `Jupyter Notebook`.
+
+## Download dataset
+- blob:https://ourworldindata.org/45aa90b8-7da0-4181-8920-2bb89fec0a9e
